@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanllenge Dario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Ingrese el texto aquí</h1>
+            <textarea id="input-text" placeholder="Solo letras minúsculas y sin acentos..."></textarea>
+            <div class="buttons">
+                <button class="encrypt-btn" onclick="encriptar()">Encriptar</button>
+                <button class="decrypt-btn" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            <p class="validation-text"><span>⚠️</span> Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="right-panel">
+            <img src="imagen.jpg" alt="No se encontró ningún mensaje">
+            <p class="message-title">Ningún mensaje fue encontrado</p>
+            <p class="message-subtitle">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="output-text"></div>
+            <button class="copy-btn" onclick="copiarTexto()" style="display: none;">Copiar Texto</button> <!-- Botón para copiar -->
+        </div>
+    </div>
+    <footer>
+        <p>Creado por Darío Fernando Palacios - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
